@@ -1,0 +1,5 @@
+function alternatingSums(a) {
+    let num1 = a.filter((elem, index) => index%2 == 0).reduce((total,elem) => total + elem, 0);
+    let num2 = a.filter((elem, index) => index%2 == 1).reduce((total,elem) => total + elem, 0)
+    return result = [num1, num2];
+}
