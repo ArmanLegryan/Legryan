@@ -1,0 +1,15 @@
+function allLongestStrings(inputArray) {
+  let count = 0;
+  let myArr = [];
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i].length > count) {
+      count = inputArray[i].length;
+    }
+  }
+  for (let j = 0; j < inputArray.length; j++) {
+    if (inputArray[j].length == count) {
+      myArr.push(inputArray[j]);
+    }
+  }
+  return myArr;
+}
