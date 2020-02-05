@@ -1,0 +1,6 @@
+function sortByHeight(a) {
+    let arr = a.filter((elem, index) => elem != -1).sort((a,b) => a - b)
+    let result = a.map(elem => elem != -1 ? null : -1)
+    return result.map(elem => elem == null ? arr.shift() : -1 )
+}
+
