@@ -1,0 +1,17 @@
+function addBorder(picture) {
+    let len = 0;
+    let one = "";
+    let arr = picture.map(elem => `*${elem}*`);
+    // for (let i = 0; i < arr.length; i++) {
+    //     len = arr[i].length;
+    // }
+    arr.map(i => len = i.length)
+    
+    for (let j = 0; j < len; j++) {
+        one = one.concat("*")
+    }
+    arr.push(one);
+    arr.unshift(one)
+    return arr
+}
+    
